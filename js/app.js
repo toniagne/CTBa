@@ -49,6 +49,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.dash-actb', {
+    url: '/dash/actb',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/actb.html',
+        controller: 'Internas'
+      }
+    }
+  })
+
+
 
   .state('tab.chats', {
       url: '/chats',
@@ -78,6 +89,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+ 
+
 
   .state('tab.account', {
     url: '/account',
