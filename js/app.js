@@ -70,6 +70,43 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+  .state('tab.chats-conheca', {
+      url: '/chats/conheca',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/actb.html',
+          controller: 'Internas'
+        }
+      }
+    })
+  .state('tab.chats-publicacoes', {
+      url: '/chats/publicacoes',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/publicacoes.html',
+          controller: 'Internas'
+        }
+      }
+    })
+  .state('tab.chats-videos', {
+      url: '/chats/videos',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/videos.html',
+          controller: 'Internas'
+        }
+      }
+    })
+    .state('tab.chats-contato', {
+      url: '/chats/contato',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/contato.html',
+          controller: 'Contato'
+        }
+      }
+    })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {

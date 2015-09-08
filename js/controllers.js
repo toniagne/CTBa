@@ -52,7 +52,11 @@ angular.module('starter.controllers', [])
 })
 
 .controller('Internas', function($scope, $stateParams, Chats) {
-  console.log('teste');
+ 
+})
+
+.controller('Contato', function($scope, $stateParams, Chats) {
+  
 })
 
 .controller('AccountCtrl', function($scope) {
