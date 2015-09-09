@@ -154,7 +154,7 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('AccountCtrl', function($scope, $sce) {
    $scope.frameURL = function(src) {
     return $sce.trustAsResourceUrl('http://www.ctb.org.br/mobile/backend/ctb/noticiaframe/'+src);
   }
