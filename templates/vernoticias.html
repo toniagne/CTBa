@@ -5,19 +5,11 @@
 
   <div class="item tabs tabs-secondary tabs-icon-left"> 
     <a title="Curta Nosso Link"  class="tab-item"
-      onclick="window.plugins.socialsharing.shareViaFacebook({{chat.strNome}}, null, 'http://portalctb.org.br/site/{{chat.imagem}}', null, 'http://portalctb.org.br', function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
-      <i class="icon ion-social-facebook"></i>
-      Facebook
+       onclick="window.plugins.socialsharing.share({{chat.strNome}}, 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl')">
+      <i class="icon ion-android-share-alt"></i>
+      COMPARTILHAR ESTA NOTÍCIA
     </a>
-    <a class="tab-item" onclick="window.plugins.socialsharing.shareVia('com.apple.social.twitter', '{{chat.strNome}}', null, null, 'http://portalctb.org.br', function(){console.log('share ok')}, function(msg) {alert('error: ' + msg)})">
-      <i class="icon ion-social-twitter"></i>
-      Twitter
-    </a>
-    <a onclick="window.plugins.socialsharing.shareViaWhatsApp({{chat.strNome}}, null, null, null'http://portalctb.org.br', function() {console.log('share ok')}, function(errormsg){alert(errormsg)})" class="tab-item">
- 
-      <i class="icon ion-social-whatsapp"></i>
-      Whatsapp
-    </a>
+     
 
   </div>
 
