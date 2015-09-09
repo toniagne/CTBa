@@ -1,9 +1,66 @@
-<ion-view view-title="Account">
-  <ion-content>
-    <ion-list>
-    <ion-toggle  ng-model="settings.enableFriends">
-        Enable Friends
-    </ion-toggle>
-    </ion-list>
+<ion-view view-title='Conheça a CTB'>
+    <ion-nav-buttons side="left">
+    <button class="button button-balanced button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+      
+  </ion-nav-buttons>
+  <ion-content scroll="false">
+      
+
+<ion-slide-box show-pager="false" ion-slide-tabs >
+        
+
+        <ion-slide ion-slide-tab-label="Princípios e Objetivos">
+          <ion-scroll zooming="true" direction="y" style="width: 100%; height: 100%">    
+          	<div class="card">
+      			  <div class="item item-text-wrap no-padding">
+      			     <iframe  style="width:100%; overflow:hidden; pointer-events:none;" scrolling="no" height="2700" src="{{frameURL(9162)}}"></iframe>
+      			  </div>
+			      </div>   
+          </ion-scroll>    
+        </ion-slide>
+
+        <ion-slide ion-slide-tab-label="Planos de Luta">
+          <ion-scroll zooming="true" direction="y" style="width: 100%; height: 100%">    
+            <div class="card">
+              <div class="item item-text-wrap no-padding">
+                 <iframe  style="width:100%; overflow:hidden; pointer-events:none;" scrolling="no" height="2700" src="{{frameURL(17)}}"></iframe>
+              </div>
+            </div>   
+          </ion-scroll>     
+        </ion-slide>
+
+        <ion-slide ion-slide-tab-label="Estatuto">
+           <ion-scroll zooming="true" direction="y" style="width: 100%; height: 100%">    
+            <div class="card">
+              <div class="item item-text-wrap no-padding">
+                 <iframe  style="width:100%; overflow:hidden; pointer-events:none;" scrolling="no" height="2700" src="{{frameURL(16)}}"></iframe>
+              </div>
+            </div>   
+          </ion-scroll>     
+        </ion-slide>
+
+        <ion-slide ion-slide-tab-label="Filiação">
+          <ion-scroll zooming="true" direction="y" style="width: 100%; height: 100%">    
+            <div class="card">
+              <div class="item item-text-wrap no-padding">
+                 <iframe  style="width:100%; overflow:hidden; pointer-events:none;" scrolling="no" height="2700" src="{{frameURL(284)}}"></iframe>
+              </div>
+            </div>   
+          </ion-scroll>    
+        </ion-slide>
+
+        <ion-slide ion-slide-tab-label="Direção Nascional">
+          <ion-scroll zooming="true" direction="y" style="width: 100%; height: 100%">    
+            <div class="card">
+              <div class="item item-text-wrap no-padding">
+                 <iframe  style="width:100%; overflow:hidden; pointer-events:none;" scrolling="no" height="2700" src="{{frameURL(18386)}}"></iframe>
+              </div>
+            </div>   
+          </ion-scroll>       
+        </ion-slide>
+
+ </ion-slide-box>
+  
   </ion-content>
 </ion-view>
