@@ -155,7 +155,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+   $scope.frameURL = function(src) {
+    return $sce.trustAsResourceUrl('http://www.ctb.org.br/mobile/backend/ctb/noticiaframe/'+src);
+  }
 });
