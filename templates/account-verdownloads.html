@@ -1,0 +1,23 @@
+ 
+
+<ion-view view-title='Publicações'>
+<ion-nav-buttons side="left">
+    <button class="button button-balanced button-icon button-clear ion-navicon" menu-toggle="left">
+    </button>
+      
+  </ion-nav-buttons>
+  <ion-content >   
+
+
+<div class="list">  
+        <a   ng-repeat="documento in documentos" 
+         href="http://portalctb.org.br/site/publicacoes-ctb/{{linkitem}}/{{documento.id}}-{{documento.slug}}"  class="item  item-text-wrap item-icon-right">
+          {{documento.strNome}}
+          <i class="icon ion-arrow-right-c"></i>
+        </a>
+ 
+    </div>
+
+
+  </ion-content>
+</ion-view>

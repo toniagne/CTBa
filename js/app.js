@@ -137,7 +137,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AccountCtrl'
       }
     }
-  });
+  })
+
+.state('tab.account-downloadsvisualizar', {
+      url: '/account/downloads/:idDocumento',
+      views: {
+        'tab-account': {
+          templateUrl: 'templates/account-verdownloads.html',
+          controller: 'Principal'
+        }
+      }
+    });
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');

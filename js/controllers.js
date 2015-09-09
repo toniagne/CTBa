@@ -154,6 +154,36 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('Principal', function($scope, $stateParams, Chats, $ionicLoading, $http) {
+    $ionicLoading.show({
+    content: 'Loading',
+    animation: 'fade-in',
+    showBackdrop: true,
+    maxWidth: 200,
+    showDelay: 0
+  });
+    var dados = $stateParams.idDocumento;
+    var itens = dados.split("*"); 
+    $scope.linkitem = itens[1];
+    
+   $http.get('http://www.ctb.org.br/mobile/backend/ctb/carregadocumentos/'+itens[0])
+               .success(function(data) {
+                      $ionicLoading.hide();
+                })
+               .error(function(data) {
+                      $ionicLoading.hide();
+                  return $ionicPopup.alert({
+                       title: 'ATENÇÃO.',
+                       template: 'Seu dispositivo não esta conectado na internet.'
+                     });
+                })
+               .then(        
+                function(res){ 
+                  $scope.documentos  = res.data;              
+                });  
+})
+
+
 .controller('AccountCtrl', function($scope, $sce) {
    $scope.frameURL = function(src) {
     return $sce.trustAsResourceUrl('http://www.ctb.org.br/mobile/backend/ctb/noticiaframe/'+src);
