@@ -1,15 +1,29 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, $http, $location, $ionicLoading, $ionicPopup) {
+  $scope.pagina = 1;
   $scope.doRefresh = function() {
-    $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticias')
-     .success(function(newItems) {
-       $scope.noticias  = res.data;  
-     })
-     .finally(function() {
-       // Stop the ion-refresher from spinning
-       $scope.$broadcast('scroll.refreshComplete');
-     });
+     $scope.pagina++;
+    $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticias/page:'+ $scope.pagina)
+               .success(function(data) {
+                      
+                })
+               .error(function(data) {
+                      $ionicLoading.hide();
+                  return $ionicPopup.alert({
+                       title: 'ATENÇÃO.',
+                       template: 'Seu dispositivo não esta conectado na internet.'
+                     });
+                })
+               .then(        
+                function(res){ 
+                  $scope.noticias  = res.data;              
+                })
+                .finally(function() {
+                 // Stop the ion-refresher from spinning
+                 $scope.$broadcast('scroll.refreshComplete');
+               });  
+                
   };
          
           
@@ -20,6 +34,12 @@ angular.module('starter.controllers', [])
     maxWidth: 200,
     showDelay: 0
   });
+
+  $scope.mudanoticias = function(categoria){
+    console.log(categoria);
+  }
+
+
 
   $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticias')
                .success(function(data) {
@@ -46,9 +66,13 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $stateParams, Chats, $sce) {
  
   $scope.chat = Chats.get($stateParams.idNoticia);
+
+  $scope.frameURL = function(src) {
+    return $sce.trustAsResourceUrl('http://www.ctb.org.br/mobile/backend/ctb/noticiaframe/'+src);
+  }
 })
 
 .controller('Internas', function($scope, $stateParams, Chats) {
