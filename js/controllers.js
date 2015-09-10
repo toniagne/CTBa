@@ -44,7 +44,7 @@ angular.module('starter.controllers', [])
               showDelay: 0
             });
 
-        $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticiasselecionada/181')
+        $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticiasselecionada/estados')
                .success(function(data) {$ionicLoading.hide();})
                .error(function(data) {
                       $ionicLoading.hide();
