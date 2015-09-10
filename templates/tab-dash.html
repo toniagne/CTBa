@@ -18,7 +18,9 @@
             <ion-list>
               <ion-item ng-repeat="noticia in noticias" class="item-text-wrap no-padding">
                 <a href="#/tab/dash/vernoticia/{{noticia.id}}*{{noticia.titulovis}}*{{noticia.catId}}*{{noticia.conteudo}}*{{noticia.imagemvis}}">
-                  <img ng-src="http://portalctb.org.br/site/{{noticia.imagem}}" width="100%" height="180px">
+
+
+                  <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{noticia.imagem}}&size=200x100" width="100%" height="180px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="padding: 6px; width:100%; line-height:18px;">
