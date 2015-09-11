@@ -71,8 +71,21 @@ Toni Schott Agne
         <gap:plugin name="org.apache.cordova.splashscreen"  /> 
         <gap:plugin name="org.apache.cordova.vibration"  />
         <gap:plugin name="com.phonegap.plugins.pushplugin" />
-        <gap:plugin name="com.gestionaleauto.socialshare" version="0.0.3" />
-        
+        <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
+        <!-- for iOS -->
+        <feature name="SocialSharing">
+          <param name="ios-package" value="SocialSharing" />
+        </feature>
+
+        <!-- for Android (you will find one in res/xml) -->
+        <feature name="SocialSharing">
+          <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+        </feature>
+
+        <!-- for Windows Phone -->
+        <feature name="SocialSharing">
+          <param name="wp-package" value="SocialSharing"/>
+        </feature>
 
         <!-- Allow links to web pages to open in a browser -->
 <allow-intent href="http://*/*" />
