@@ -139,6 +139,22 @@ angular.module('starter.controllers', [])
  
   $scope.chat = Chats.get($stateParams.idNoticia);
 
+ $scope.compartilhar = function(titulo, imagem){
+    return 
+    window.plugins.SocialShare.share(
+    successCallback,
+    failureCallback,
+    {
+        dialogTitle : 'Share using:',         // Title of the native dialog
+        url : "http://is.gd/DikVaQ",          // Url to be shared
+        text : "Take a look at this {{url}}", // Text to be shared where possible (not in Facebook)
+                                              // {{url}} will be replaced by given url
+        mailSubject : "Great news for you"    // Subject of the email if users select a mail client
+    }
+);
+ }
+
+
   $scope.frameURL = function(src) {
     return $sce.trustAsResourceUrl('http://www.ctb.org.br/mobile/backend/ctb/noticiaframe/'+src);
   }

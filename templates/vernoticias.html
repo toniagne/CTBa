@@ -8,7 +8,7 @@
    
   <div class="item tabs tabs-secondary tabs-icon-left "> 
     <a title="Curta Nosso Link"  class="tab-item balanced"
-       onclick="window.plugins.socialsharing.shareViaFacebook(document.getElementById('nome').innerHTML)">
+      ng-click="{{compartilhar(chat.strNome, chat.imagem)}}">
       <i class="icon balanced ion-social-facebook"></i>
       <B>FACEBOOK</B> 
     </a>   
