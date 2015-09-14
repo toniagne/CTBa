@@ -23,8 +23,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $compileProvider) {
 
+ $compileProvider.aHrefSanitizationWhitelist(/^\s*(whatsapp):/);
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -138,6 +139,43 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     }
   })
+
+  .state('tab.colunista', {
+      url: '/colunista',
+      views: {
+        'tab-colunista': {
+          templateUrl: 'templates/tab-colunistas.html',
+          controller: 'Colunistas'
+        }
+      }
+    })
+  .state('tab.colunista-areatrabalho', {
+      url: '/colunista/areatrabalho',
+      views: {
+        'tab-colunista': {
+          templateUrl: 'templates/tab-colunistas-areatrabalho.html',
+          controller: 'Colunistas'
+        }
+      }
+    })
+  .state('tab.colunista-perfil', {
+      url: '/colunista/perfil',
+      views: {
+        'tab-colunista': {
+          templateUrl: 'templates/tab-colunistas-perfil.html',
+          controller: 'Colunistas'
+        }
+      }
+    })
+  .state('tab.colunista-mensagens', {
+      url: '/colunista/mensagens',
+      views: {
+        'tab-colunista': {
+          templateUrl: 'templates/tab-colunistas-mensagens.html',
+          controller: 'Colunistas'
+        }
+      }
+    })
 
 .state('tab.account-downloadsvisualizar', {
       url: '/account/downloads/:idDocumento',

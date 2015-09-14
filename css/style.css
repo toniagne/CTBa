@@ -25,6 +25,9 @@
 }
 .no-padding {
     padding: 0px !important;
+    margin: 0px !important;
+    border-width: 0px;
+    border: none;
 }
  .fundodegrade {  
 

@@ -170,6 +170,13 @@ angular.module('starter.controllers', [])
   
 })
 
+
+.controller('Colunistas', function($scope, $stateParams, Chats) {
+  
+})
+
+
+
 .controller('Principal', function($scope, $stateParams, Chats, $ionicLoading, $http) {
     $ionicLoading.show({
     content: 'Loading',

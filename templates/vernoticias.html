@@ -8,13 +8,12 @@
     <a title="Curta Nosso Link"  class="tab-item balanced"
       socialshare
 socialshare-provider="facebook"
-socialshare-text="{{chat.strNome}}"
-socialshare-url="http://720kb.net">
+socialshare-text="{{chat.strNome}}" 
       <i class="icon balanced ion-social-facebook"></i>
       <B>FACEBOOK</B> 
     </a>   
     <a title="Curta Nosso Link"  class="tab-item balanced"
-       onclick="window.plugins.socialsharing.shareViaWhatsApp(document.getElementById('nome').innerHTML)">
+     herf="whatsapp://send?text={{chat.strNome}}">
       <i class="icon balanced ion-social-whatsapp"></i>
       <B>WHATSAPP</B> 
     </a>   
@@ -23,7 +22,7 @@ socialshare-url="http://720kb.net">
       socialshare
 socialshare-provider="twitter"
 socialshare-url="http://720kb.net"
-socialshare-hashtags="woa, wonderful, interesting"
+socialshare-hashtags="{{chat.strNome}}"
 >
       <i class="icon balanced ion-social-twitter"></i>
       <B>TWITTER</B> 
