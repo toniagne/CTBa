@@ -35,7 +35,7 @@ ion-slide:nth-child(2n) {
     padding: 0 12px 20px 12px;
     font-size: 15px;
     text-transform: uppercase;
-    color: #008B00;
+    color: #8B0000;
     -webkit-transition: color .25s ease-in-out;
     transition: color .25s ease-in-out;
     position: relative;
@@ -43,7 +43,8 @@ ion-slide:nth-child(2n) {
 }
 
 .slidingTabs ul li.tab-active {
-    color: #006400;
+    color: #8B0000;
+    text-decoration: bold;
 }
 
 .slidingTabs ul li .ink {

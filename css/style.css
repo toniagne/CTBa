@@ -34,12 +34,12 @@
             margin-top: -28%; width: 100%; height: 95px;
             position: absolute; 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+50&0+0,0.88+50 */
-background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,0.88) 50%); /* FF3.6+ */
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(46,18,17,0.88) 50%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(0,0,0,0.88))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.88) 50%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.88) 50%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,0.88) 50%); /* IE10+ */
-background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,0.88) 50%); /* W3C */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(46,18,17,0.88) 50%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(46,18,17,0.88) 50%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(46,18,17,0.88) 50%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(46,18,17,0.88) 50%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e0000000',GradientType=0 ); /* IE6-9 */
              
  }
@@ -67,16 +67,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
  
  .mymenu {
-  background-color: green !important; 
+  background-color: #8B0000 !important; 
+  font-weight: 2px;
 }
 
 .bar-black{
-  background-color: green !important;
+  background-color: #8B0000 !important;
 }  
 
 /*Set the background to transparent for ion-item*/
 .mymenu .item {
-  background-color: green;
+  background-color: #8B0000;
   border: none;
   border-top: 0px solid;
   border-bottom: 0px solid;
