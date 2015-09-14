@@ -8,12 +8,12 @@
     <a title="Curta Nosso Link"  class="tab-item balanced"
       socialshare
 socialshare-provider="facebook"
-socialshare-text="{{chat.strNome}}" 
+socialshare-text="{{chat.strNome}}">
       <i class="icon balanced ion-social-facebook"></i>
       <B>FACEBOOK</B> 
     </a>   
     <a title="Curta Nosso Link"  class="tab-item balanced"
-     herf="whatsapp://send?text={{chat.strNome}}">
+     onclick="window.plugins.socialsharing.shareViaWhatsApp(document.getElementById('titulo').innerHTML, null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">
       <i class="icon balanced ion-social-whatsapp"></i>
       <B>WHATSAPP</B> 
     </a>   
@@ -30,7 +30,7 @@ socialshare-hashtags="{{chat.strNome}}"
   </div>  
 
   <div class="item item-text-wrap"> 
-    <h2><b>{{chat.strNome}}</b></h2>
+    <h2><b id="titulo">{{chat.strNome}}</b></h2>
     <p>{{chat.categoria}}</p>
   </div>
  

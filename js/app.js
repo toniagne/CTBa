@@ -106,6 +106,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       }
     })
+    .state('tab.chats-informacoes', {
+      url: '/chats/informacoes',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/informacoes.html',
+          controller: 'Internas'
+        }
+      }
+    })
+
 
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
