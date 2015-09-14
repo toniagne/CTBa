@@ -73,7 +73,8 @@ angular.module('starter.services', [])
                                     "strNome": str2, 
                                     "categoria": itens[2],
                                     "conteudo": converttxt19,
-                                    "imagem": str
+                                    "imagem": str,
+                                    "data": itens[5],
                                   },
                              ];         
                         return detalheContato[0];    

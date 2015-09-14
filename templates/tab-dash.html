@@ -18,7 +18,7 @@
 
             <ion-list>
               <ion-item ng-repeat="noticia in noticias" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{noticia.id}}*{{noticia.titulovis}}*{{noticia.catId}}*{{noticia.conteudo}}*{{noticia.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{noticia.id}}*{{noticia.titulovis}}*{{noticia.catId}}*{{noticia.conteudo}}*{{noticia.imagemvis}}*{{noticia.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{noticia.imagem}}&size=200x120" width="100%" height="200px">
@@ -26,7 +26,8 @@
                 <div class="fundodegrade"> 
 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
-                        <font color="#fffff" size="3">{{noticia.strNome}} </font> 
+                        <font color="#fffff" size="2">{{noticia.data}}</font><br>
+                        <font color="#fffff" size="3"> {{noticia.strNome}} </font> 
                       </p>
                 </div>
               </ion-item>
@@ -43,13 +44,14 @@
 
             <ion-list>
               <ion-item ng-repeat="estado in estados" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{estado.id}}*{{estado.titulovis}}*{{estado.catId}}*{{estado.conteudo}}*{{estado.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{estado.id}}*{{estado.titulovis}}*{{estado.catId}}*{{estado.conteudo}}*{{estado.imagemvis}}*{{estado.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{estado.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{estado.data}}</font><br>
                         <font color="#fffff" size="3">{{estado.strNome}} </font> 
                       </p>
                 </div>
@@ -67,13 +69,14 @@
 
             <ion-list>
               <ion-item ng-repeat="internacional in internacionais" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{internacional.id}}*{{internacional.titulovis}}*{{internacional.catId}}*{{internacional.conteudo}}*{{internacional.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{internacional.id}}*{{internacional.titulovis}}*{{internacional.catId}}*{{internacional.conteudo}}*{{internacional.imagemvis}}*{{internacional.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{internacional.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{internacional.data}}</font><br>
                         <font color="#fffff" size="3">{{internacional.strNome}} </font> 
                       </p>
                 </div>
@@ -92,13 +95,14 @@
 
             <ion-list>
               <ion-item ng-repeat="cultura in culturas" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{cultura.id}}*{{cultura.titulovis}}*{{cultura.catId}}*{{cultura.conteudo}}*{{cultura.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{cultura.id}}*{{cultura.titulovis}}*{{cultura.catId}}*{{cultura.conteudo}}*{{cultura.imagemvis}}*{{cultura.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{cultura.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{cultura.data}}</font><br>
                         <font color="#fffff" size="3">{{cultura.strNome}} </font> 
                       </p>
                 </div>
@@ -117,13 +121,14 @@
 
             <ion-list>
               <ion-item ng-repeat="secretaria in secretarias" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{secretaria.id}}*{{secretaria.titulovis}}*{{secretaria.catId}}*{{secretaria.conteudo}}*{{secretaria.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{secretaria.id}}*{{secretaria.titulovis}}*{{secretaria.catId}}*{{secretaria.conteudo}}*{{secretaria.imagemvis}}*{{secretaria.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{secretaria.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{secretaria.data}}</font><br>
                         <font color="#fffff" size="3">{{secretaria.strNome}} </font> 
                       </p>
                 </div>
@@ -141,13 +146,14 @@
 
             <ion-list>
               <ion-item ng-repeat="opiniao in opinioes" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{opiniao.id}}*{{opiniao.titulovis}}*{{opiniao.catId}}*{{opiniao.conteudo}}*{{opiniao.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{opiniao.id}}*{{opiniao.titulovis}}*{{opiniao.catId}}*{{opiniao.conteudo}}*{{opiniao.imagemvis}}*{{opiniao.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{opiniao.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{opiniao.data}}</font><br>
                         <font color="#fffff" size="3">{{opiniao.strNome}} </font> 
                       </p>
                 </div>
@@ -166,13 +172,14 @@
 
             <ion-list>
               <ion-item ng-repeat="rural in rurais" class="item-text-wrap no-padding">
-                <a href="#/tab/dash/vernoticia/{{rural.id}}*{{rural.titulovis}}*{{rural.catId}}*{{rural.conteudo}}*{{rural.imagemvis}}">
+                <a href="#/tab/dash/vernoticia/{{rural.id}}*{{rural.titulovis}}*{{rural.catId}}*{{rural.conteudo}}*{{rural.imagemvis}}*{{rural.data}}">
 
 
                   <img ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/{{rural.imagem}}&size=200x150" width="100%" height="200px">
               </a> 
                 <div class="fundodegrade"> 
                       <p style="margin-top:25px; padding: 6px; width:100%; line-height:18px;">
+                      <font color="#fffff" size="2">{{rural.data}}</font><br>
                         <font color="#fffff" size="3">{{rural.strNome}} </font> 
                       </p>
                 </div>
