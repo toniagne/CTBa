@@ -45,6 +45,7 @@ ion-slide:nth-child(2n) {
 .slidingTabs ul li.tab-active {
     color: #8B0000;
     text-decoration: bold;
+    text-decoration: underline;
 }
 
 .slidingTabs ul li .ink {
