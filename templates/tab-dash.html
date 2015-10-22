@@ -5,8 +5,12 @@
       <img src="img/logoTopo.png" height="95%" width="220px" style="margin-left:10px;">
   </ion-nav-buttons>
  
-  <ion-content> 
- 
+  <ion-content>  
+  
+  <a  ng-repeat="banner in bannertopo" href="{{banner.link}}">
+  <img ng-repeat="banner in bannertopo" ng-src="http://www.ctb.org.br/mobile/thumb.php?src=../site/images/banners/{{banner.imagem}}&size=350x80"></a>
+
+
 <ion-slide-box show-pager="false" ion-slide-tabs on-slide-changed="mudanoticias($index);">
 
         <ion-slide ion-slide-tab-label="ÚLTIMAS">

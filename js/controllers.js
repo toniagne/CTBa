@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
                 .finally(function() {
                  // Stop the ion-refresher from spinning
                  $scope.$broadcast('scroll.refreshComplete');
-               });  
+               });   
                 
   };
          
@@ -43,6 +43,7 @@ angular.module('starter.controllers', [])
               maxWidth: 200,
               showDelay: 0
             });
+ 
 
         $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticiasselecionada/estados')
                .success(function(data) {$ionicLoading.hide();})
@@ -109,6 +110,15 @@ angular.module('starter.controllers', [])
   }
 
 
+
+$http.get('http://www.ctb.org.br/mobile/backend/ctb/verbanner')
+               .success(function(data) {$ionicLoading.hide();})
+               .error(function(data) {
+                      $ionicLoading.hide();
+                  return $ionicPopup.alert({
+                       title: 'ATENÇÃO.', template: 'Seu dispositivo não esta conectado na internet.'
+                     }); })
+               .then(function(res){ return $scope.bannertopo  = res.data; });        
 
   $http.get('http://www.ctb.org.br/mobile/backend/ctb/noticias')
                .success(function(data) {
