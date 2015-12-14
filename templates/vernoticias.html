@@ -8,18 +8,13 @@
   <div class="item tabs tabs-secondary tabs-icon-left "> 
 
 
- <a title="Curta Nosso Link"  class="tab-item assertive"
-      onclick="window.plugins.socialsharing.share('{{chat.strNome}}', null, null, 'http://www.ctb.org.br')"
+ 
+    
+    <a title="Curta Nosso Link"  class="tab-item assertive"
+     ng-click="compartilhar()"
 >
       <i class="icon assertive ion-android-share-alt"></i>
       <B>COMPARTILHAR</B> 
-    </a>  
-    
-    <a title="Curta Nosso Link"  class="tab-item assertive"
-      ng-click="compartilhar({{chat.strNome}}, http://portalctb.org.br/site/{{chat.imagem}})"
->
-      <i class="icon assertive ion-social-twitter"></i>
-      <B>TWITTER</B> 
     </a>  
   </div>  
 

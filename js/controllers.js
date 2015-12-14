@@ -149,14 +149,9 @@ $http.get('http://www.ctb.org.br/mobile/backend/ctb/verbanner')
  
   $scope.chat = Chats.get($stateParams.idNoticia);
 
- $scope.compartilhar = function(titulo, imagem){
-    return 
-   window.plugins.socialsharing.share(
-  titulo,
-  'Optional title',
-  [imagem],
-  'http://www.ctb.org.br');
- }
+ $scope.compartilhar=function(){
+     window.plugins.socialsharing.share('Digital Signature Maker', null, null, 'https://play.google.com/store/apps/details?id=com.prantikv.digitalsignaturemaker');
+  }
 
 
   $scope.frameURL = function(src) {
