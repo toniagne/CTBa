@@ -7,9 +7,15 @@
  <img  ng-src="http://portalctb.org.br/site/{{chat.imagem}}" class="full-image">   
   <div class="item tabs tabs-secondary tabs-icon-left "> 
 
-<button onclick="window.plugins.socialsharing.share('Message only')">message only</button>
- 
 
+
+    
+    <a title="Curta Nosso Link"  class="tab-item assertive"
+      onclick="window.plugins.socialsharing.share('{{chat.strNome}}', null, null, 'http://www.ctb.org.br')"
+>
+      <i class="icon assertive ion-android-share-alt"></i>
+      <B>COMPARTILHAR</B> 
+    </a>  
   </div>  
 
   <div class="item item-text-wrap"> 
