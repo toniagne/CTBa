@@ -150,7 +150,7 @@ $http.get('http://www.ctb.org.br/mobile/backend/ctb/verbanner')
   $scope.chat = Chats.get($stateParams.idNoticia);
 
  $scope.compartilhar=function(titulo, imagem){
-     window.plugins.socialsharing.share(titulo, null, null, 'http://www.ctb.org.br');
+     window.plugins.socialsharing.share(titulo, null, 'http://portalctb.org.br/site/'+imagem, 'http://www.ctb.org.br');
   }
 
 
